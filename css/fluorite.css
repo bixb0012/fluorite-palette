@@ -1,0 +1,124 @@
+/* Fluorite Palette. MIT License. Copyright (c) 2026 Strata contributors. */
+:root {
+  --fluorite-category-server-010: #e1f1ff;
+  --fluorite-category-server-020: #c3e2fe;
+  --fluorite-category-server-040: #83c5fd;
+  --fluorite-category-server-050: #50b1fd;
+  --fluorite-category-server-060: #1497eb;
+  --fluorite-category-server-outline: #005589;
+  --fluorite-category-server-tag-light: #017bc3;
+  --fluorite-category-server-tag-dark: #1497eb;
+  --fluorite-category-data-store-010: #efebff;
+  --fluorite-category-data-store-020: #e0d8fe;
+  --fluorite-category-data-store-040: #c3b0fd;
+  --fluorite-category-data-store-050: #b194fd;
+  --fluorite-category-data-store-060: #9d70fb;
+  --fluorite-category-data-store-outline: #6029b1;
+  --fluorite-category-data-store-tag-light: #885ae3;
+  --fluorite-category-data-store-tag-dark: #9d70fb;
+  --fluorite-category-app-010: #ffe9e4;
+  --fluorite-category-app-020: #fed3c8;
+  --fluorite-category-app-040: #fda38e;
+  --fluorite-category-app-050: #fd7f63;
+  --fluorite-category-app-060: #f25332;
+  --fluorite-category-app-outline: #931b00;
+  --fluorite-category-app-tag-light: #da3c18;
+  --fluorite-category-app-tag-dark: #f25332;
+  --fluorite-category-general-010: #d9f5f3;
+  --fluorite-category-general-020: #b0ebe8;
+  --fluorite-category-general-040: #20d8d3;
+  --fluorite-category-general-050: #1bc1bc;
+  --fluorite-category-general-060: #16a5a1;
+  --fluorite-category-general-outline: #005e5b;
+  --fluorite-category-general-tag-light: #018481;
+  --fluorite-category-general-tag-dark: #16a5a1;
+  --fluorite-category-it-010: #eeeeee;
+  --fluorite-category-it-020: #d7d7d7;
+  --fluorite-category-it-040: #b1b1b1;
+  --fluorite-category-it-050: #989898;
+  --fluorite-category-it-060: #808080;
+  --fluorite-category-it-outline: #424242;
+  --fluorite-category-it-tag-light: #767676;
+  --fluorite-category-it-tag-dark: #898989;
+  --fluorite-category-people-010: #e3f4e2;
+  --fluorite-category-people-020: #c7e9c6;
+  --fluorite-category-people-040: #82d583;
+  --fluorite-category-people-050: #55c559;
+  --fluorite-category-people-060: #1fae31;
+  --fluorite-category-people-outline: #006410;
+  --fluorite-category-people-tag-light: #008a1c;
+  --fluorite-category-people-tag-dark: #1fae31;
+  --fluorite-badge-top: #ffb54d;
+  --fluorite-badge-bottom: #ff9500;
+  --fluorite-badge-outline: #ac4b00;
+  --fluorite-badge-inner-top: #ffe2bf;
+  --fluorite-badge-inner-bottom: #fed3a1;
+  --fluorite-chip-fill: #ffe752;
+  --fluorite-chip-outline: #b88804;
+  --fluorite-chip-symbol: #3d2f00;
+  --fluorite-chip-inner: #f9f0ba;
+  --fluorite-globe-ocean-top: #7fd0f5;
+  --fluorite-globe-ocean-bottom: #3aa6de;
+  --fluorite-globe-rim: #006089;
+  --fluorite-globe-land-top: #a5dc7a;
+  --fluorite-globe-land-bottom: #6cbf4f;
+  --fluorite-globe-coastline: #2b7400;
+  --fluorite-cloud-top: #f7fbff;
+  --fluorite-cloud-bottom: #bfd3e6;
+  --fluorite-cloud-outline: #718395;
+  --fluorite-background-light: #ffffff;
+  --fluorite-background-dark: #1e2329;
+  --fluorite-container-light-line: #424242;
+  --fluorite-container-light-logical-line: #6b6b6b;
+  --fluorite-container-light-label-bar: #f2f2f2;
+  --fluorite-container-light-label-bar-line: #d6d6d6;
+  --fluorite-container-light-label-text: #333333;
+  --fluorite-container-dark-line: #c4c8cc;
+  --fluorite-container-dark-logical-line: #9aa1a8;
+  --fluorite-container-dark-label-bar: #2e343b;
+  --fluorite-container-dark-label-bar-line: #454c55;
+  --fluorite-container-dark-label-text: #e6e8ea;
+
+  /* Theme-dependent roles: light by default */
+  --fluorite-background: var(--fluorite-background-light);
+  --fluorite-category-server-tag: var(--fluorite-category-server-tag-light);
+  --fluorite-category-data-store-tag: var(--fluorite-category-data-store-tag-light);
+  --fluorite-category-app-tag: var(--fluorite-category-app-tag-light);
+  --fluorite-category-general-tag: var(--fluorite-category-general-tag-light);
+  --fluorite-category-it-tag: var(--fluorite-category-it-tag-light);
+  --fluorite-category-people-tag: var(--fluorite-category-people-tag-light);
+}
+
+[data-theme="dark"] {
+  --fluorite-background: var(--fluorite-background-dark);
+  --fluorite-category-server-tag: var(--fluorite-category-server-tag-dark);
+  --fluorite-category-data-store-tag: var(--fluorite-category-data-store-tag-dark);
+  --fluorite-category-app-tag: var(--fluorite-category-app-tag-dark);
+  --fluorite-category-general-tag: var(--fluorite-category-general-tag-dark);
+  --fluorite-category-it-tag: var(--fluorite-category-it-tag-dark);
+  --fluorite-category-people-tag: var(--fluorite-category-people-tag-dark);
+}
+
+/* Follow the reader's system setting unless the page sets data-theme="light" */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --fluorite-background: var(--fluorite-background-dark);
+    --fluorite-category-server-tag: var(--fluorite-category-server-tag-dark);
+    --fluorite-category-data-store-tag: var(--fluorite-category-data-store-tag-dark);
+    --fluorite-category-app-tag: var(--fluorite-category-app-tag-dark);
+    --fluorite-category-general-tag: var(--fluorite-category-general-tag-dark);
+    --fluorite-category-it-tag: var(--fluorite-category-it-tag-dark);
+    --fluorite-category-people-tag: var(--fluorite-category-people-tag-dark);
+  }
+}
+
+/* data-theme="light" on any element, so a section can be light inside a dark page */
+[data-theme="light"] {
+  --fluorite-background: var(--fluorite-background-light);
+  --fluorite-category-server-tag: var(--fluorite-category-server-tag-light);
+  --fluorite-category-data-store-tag: var(--fluorite-category-data-store-tag-light);
+  --fluorite-category-app-tag: var(--fluorite-category-app-tag-light);
+  --fluorite-category-general-tag: var(--fluorite-category-general-tag-light);
+  --fluorite-category-it-tag: var(--fluorite-category-it-tag-light);
+  --fluorite-category-people-tag: var(--fluorite-category-people-tag-light);
+}

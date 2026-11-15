@@ -1,0 +1,95 @@
+GIMP Palette
+Name: Fluorite
+Columns: 8
+#
+# Servers (blue)
+225 241 255	category.server 010
+195 226 254	category.server 020
+131 197 253	category.server 040
+ 80 177 253	category.server 050
+ 20 151 235	category.server 060
+  0  85 137	category.server outline
+  1 123 195	category.server tag-light
+ 20 151 235	category.server tag-dark
+# Data stores (violet)
+239 235 255	category.data-store 010
+224 216 254	category.data-store 020
+195 176 253	category.data-store 040
+177 148 253	category.data-store 050
+157 112 251	category.data-store 060
+ 96  41 177	category.data-store outline
+136  90 227	category.data-store tag-light
+157 112 251	category.data-store tag-dark
+# Apps (red-orange)
+255 233 228	category.app 010
+254 211 200	category.app 020
+253 163 142	category.app 040
+253 127  99	category.app 050
+242  83  50	category.app 060
+147  27   0	category.app outline
+218  60  24	category.app tag-light
+242  83  50	category.app tag-dark
+# General (teal)
+217 245 243	category.general 010
+176 235 232	category.general 020
+ 32 216 211	category.general 040
+ 27 193 188	category.general 050
+ 22 165 161	category.general 060
+  0  94  91	category.general outline
+  1 132 129	category.general tag-light
+ 22 165 161	category.general tag-dark
+# IT (charcoal)
+238 238 238	category.it 010
+215 215 215	category.it 020
+177 177 177	category.it 040
+152 152 152	category.it 050
+128 128 128	category.it 060
+ 66  66  66	category.it outline
+118 118 118	category.it tag-light
+137 137 137	category.it tag-dark
+# People (green)
+227 244 226	category.people 010
+199 233 198	category.people 020
+130 213 131	category.people 040
+ 85 197  89	category.people 050
+ 31 174  49	category.people 060
+  0 100  16	category.people outline
+  0 138  28	category.people tag-light
+ 31 174  49	category.people tag-dark
+# Role badge (amber)
+255 181  77	badge top
+255 149   0	badge bottom
+172  75   0	badge outline
+255 226 191	badge inner-top
+254 211 161	badge inner-bottom
+# Variant chip (gold)
+255 231  82	chip fill
+184 136   4	chip outline
+ 61  47   0	chip symbol
+249 240 186	chip inner
+# Globe
+127 208 245	globe ocean-top
+ 58 166 222	globe ocean-bottom
+  0  96 137	globe rim
+165 220 122	globe land-top
+108 191  79	globe land-bottom
+ 43 116   0	globe coastline
+# Cloud
+247 251 255	cloud top
+191 211 230	cloud bottom
+113 131 149	cloud outline
+# Backgrounds
+255 255 255	background light
+ 30  35  41	background dark
+# Containers and labels (light)
+ 66  66  66	container.light line
+107 107 107	container.light logical-line
+242 242 242	container.light label-bar
+214 214 214	container.light label-bar-line
+ 51  51  51	container.light label-text
+# Containers and labels (dark)
+196 200 204	container.dark line
+154 161 168	container.dark logical-line
+ 46  52  59	container.dark label-bar
+ 69  76  85	container.dark label-bar-line
+230 232 234	container.dark label-text
